@@ -3,10 +3,10 @@
   "name": "sanguosha-sound-pack",
   "display_name": "Sanguosha Hero Voice Pack",
   "version": "1.0.0",
-  "description": "A sound pack inspired by Sanguosha (三国杀 / Three Kingdoms Kill), the classic Chinese card game. Features authentic in-game hero voice lines — battles, stratagems, victories and defeats — mapped to AI coding tool events. Tags: sanguosha, three kingdoms, card game, chinese, battle, heroes, game voices.",
+  "description": "A sound pack inspired by Sanguosha (三国杀 / Three Kingdoms Kill), the classic Chinese card game. Features authentic in-game hero voice lines — battles, stratagems, victories and defeats — mapped to AI coding tool events.",
   "author": {
     "name": "MFK",
-    "github": "https://github.com/MarkSunDev/MFK-peon"
+    "github": "MarkSunDev"
   },
   "license": "CC-BY-NC-4.0",
   "language": "zh",
@@ -14,146 +14,546 @@
     "session.start": {
       "label": "开局",
       "sounds": [
-        { "file": "sounds/session.start/oath-of-brotherhood-m.mp3", "label": "桃园结义·男" },
-        { "file": "sounds/session.start/oath-of-brotherhood-f.mp3", "label": "桃园结义·女" },
-        { "file": "sounds/session.start/command-the-world-m.mp3", "label": "号令天下·男" },
-        { "file": "sounds/session.start/command-the-world-f.mp3", "label": "号令天下·女" },
-        { "file": "sounds/session.start/reclaim-the-heartland-m.mp3", "label": "克复中原·男" },
-        { "file": "sounds/session.start/reclaim-the-heartland-f.mp3", "label": "克复中原·女" },
-        { "file": "sounds/session.start/united-in-purpose-m.mp3", "label": "戮力同心·男" },
-        { "file": "sounds/session.start/united-in-purpose-f.mp3", "label": "戮力同心·女" },
-        { "file": "sounds/session.start/secure-the-kingdom-m.mp3", "label": "固国安邦·男" },
-        { "file": "sounds/session.start/secure-the-kingdom-f.mp3", "label": "固国安邦·女" },
-        { "file": "sounds/session.start/troops-at-the-gates-m.mp3", "label": "兵临城下·男" },
-        { "file": "sounds/session.start/troops-at-the-gates-f.mp3", "label": "兵临城下·女" }
+        {
+          "file": "sounds/session.start/oath-of-brotherhood-m.mp3",
+          "label": "桃园结义·男",
+          "sha256": "968a440b2be1eb1b724a910508366d4b5f58cd280c0f79699035397560acf2b9"
+        },
+        {
+          "file": "sounds/session.start/oath-of-brotherhood-f.mp3",
+          "label": "桃园结义·女",
+          "sha256": "7277a5a2f7bf0ece45c96fced10be8f99b197e2bd880e92b0b719628bf8b1a73"
+        },
+        {
+          "file": "sounds/session.start/command-the-world-m.mp3",
+          "label": "号令天下·男",
+          "sha256": "1e5a4999ff107cdf350218ced0f18d000b7133f45415f0660cca923a5bb37099"
+        },
+        {
+          "file": "sounds/session.start/command-the-world-f.mp3",
+          "label": "号令天下·女",
+          "sha256": "a070e586fddc0fd4677780aadf0dc9b7f6cc0fdca60342e762f47f836e4b573b"
+        },
+        {
+          "file": "sounds/session.start/reclaim-the-heartland-m.mp3",
+          "label": "克复中原·男",
+          "sha256": "75e96062c4ba91910bc046c4392fd0fa3a0784fc95da358bea7e05c4f59caae7"
+        },
+        {
+          "file": "sounds/session.start/reclaim-the-heartland-f.mp3",
+          "label": "克复中原·女",
+          "sha256": "ce5611ee882ac09988435b5eb864d15a2b67fa8a9c421315af36fbac0a10724b"
+        },
+        {
+          "file": "sounds/session.start/united-in-purpose-m.mp3",
+          "label": "戮力同心·男",
+          "sha256": "42f742f9cd90dbdb0e9634cf70ae77d165cecdf0817f63099503a67a0bb3d2b7"
+        },
+        {
+          "file": "sounds/session.start/united-in-purpose-f.mp3",
+          "label": "戮力同心·女",
+          "sha256": "2947de17a9cf356454f0349285713eab2801c858971c80a47d4fa2e224e99592"
+        },
+        {
+          "file": "sounds/session.start/secure-the-kingdom-m.mp3",
+          "label": "固国安邦·男",
+          "sha256": "c1c60cdf5c1cc270d19a02ca537556f7b622fbbbc15bc3db5483672865821704"
+        },
+        {
+          "file": "sounds/session.start/secure-the-kingdom-f.mp3",
+          "label": "固国安邦·女",
+          "sha256": "c09f057f0e86e72cca2c0048f6c81458c3ac5f4a83e1c478c41178ecc571a2b6"
+        },
+        {
+          "file": "sounds/session.start/troops-at-the-gates-m.mp3",
+          "label": "兵临城下·男",
+          "sha256": "baaf9561132d6833036dbd109d78098b59ae24c901018377b1b8d0d973129e11"
+        },
+        {
+          "file": "sounds/session.start/troops-at-the-gates-f.mp3",
+          "label": "兵临城下·女",
+          "sha256": "637dc6a2e0a71b159a24357671c6d7e31900431706439770a5037e8bac1a8d44"
+        }
       ]
     },
     "task.acknowledge": {
       "label": "接受任务",
       "sounds": [
-        { "file": "sounds/task.acknowledge/strike-m.mp3", "label": "杀·男" },
-        { "file": "sounds/task.acknowledge/strike-f.mp3", "label": "杀·女" },
-        { "file": "sounds/task.acknowledge/fire-strike-m.mp3", "label": "火杀·男" },
-        { "file": "sounds/task.acknowledge/fire-strike-f.mp3", "label": "火杀·女" },
-        { "file": "sounds/task.acknowledge/thunder-strike-m.mp3", "label": "雷杀·男" },
-        { "file": "sounds/task.acknowledge/thunder-strike-f.mp3", "label": "雷杀·女" },
-        { "file": "sounds/task.acknowledge/swift-resolution-m.mp3", "label": "速战速决·男" },
-        { "file": "sounds/task.acknowledge/swift-resolution-f.mp3", "label": "速战速决·女" },
-        { "file": "sounds/task.acknowledge/assassination-m.mp3", "label": "刺杀·男" },
-        { "file": "sounds/task.acknowledge/assassination-f.mp3", "label": "刺杀·女" },
-        { "file": "sounds/task.acknowledge/watch-this-move-m.mp3", "label": "看招·男" },
-        { "file": "sounds/task.acknowledge/fire-attack-m.mp3", "label": "火攻·男" }
+        {
+          "file": "sounds/task.acknowledge/strike-m.mp3",
+          "label": "杀·男",
+          "sha256": "08e95b1a234dba2c27431114dc5529b064208e73dd069f016b49d8cfda34f2d1"
+        },
+        {
+          "file": "sounds/task.acknowledge/strike-f.mp3",
+          "label": "杀·女",
+          "sha256": "da2b78148db0f9bb6649caa78edb8601f2a88f329f62dcc9ca8a6cb7930e41fa"
+        },
+        {
+          "file": "sounds/task.acknowledge/fire-strike-m.mp3",
+          "label": "火杀·男",
+          "sha256": "bb115b341e02a97ec62ccd0f4df0b0fe31f1c0b4f78afd57720022f1aa61992e"
+        },
+        {
+          "file": "sounds/task.acknowledge/fire-strike-f.mp3",
+          "label": "火杀·女",
+          "sha256": "f639823a88fd9cfd09317730748880e47e79bc7eacd1402d6ae70081393d7655"
+        },
+        {
+          "file": "sounds/task.acknowledge/thunder-strike-m.mp3",
+          "label": "雷杀·男",
+          "sha256": "5ed084adacd14cdc77fd0115a9aea14f858b45754c386d624c141fe8a3eb3a62"
+        },
+        {
+          "file": "sounds/task.acknowledge/thunder-strike-f.mp3",
+          "label": "雷杀·女",
+          "sha256": "15f22e781b438164a307a4ce8ae64c47214104d9c5513418a15ce2974b4d4eff"
+        },
+        {
+          "file": "sounds/task.acknowledge/swift-resolution-m.mp3",
+          "label": "速战速决·男",
+          "sha256": "7a62c859fa660b06558f8c2e902ad9ac375d96b619b9e40c1d26cd5aa02d06d0"
+        },
+        {
+          "file": "sounds/task.acknowledge/swift-resolution-f.mp3",
+          "label": "速战速决·女",
+          "sha256": "bb0f6c2ea0d9e8cdb8b57e919f8ca4fd8d277633a84b033c6a76e248aa0f9a7c"
+        },
+        {
+          "file": "sounds/task.acknowledge/assassination-m.mp3",
+          "label": "刺杀·男",
+          "sha256": "c5ff126cf0a997e81e5482e9299016632335c8bf302f0b69c05f99cb1ad68b3b"
+        },
+        {
+          "file": "sounds/task.acknowledge/assassination-f.mp3",
+          "label": "刺杀·女",
+          "sha256": "7bbccf7d4b777126ca559c2a4fc79c9931dc8532d26158d44b3cb34a8cf48a69"
+        },
+        {
+          "file": "sounds/task.acknowledge/watch-this-move-m.mp3",
+          "label": "看招·男",
+          "sha256": "b7b4f2129be6c9df34e75a2a9d7664df33090b33799733dcca34cf72e99e2c71"
+        },
+        {
+          "file": "sounds/task.acknowledge/fire-attack-m.mp3",
+          "label": "火攻·男",
+          "sha256": "ae8abe55d0b89d7e8f50df39d30878103d5a1b600567a82662b9dc280bcecd1f"
+        }
       ]
     },
     "task.complete": {
       "label": "任务完成",
       "sounds": [
-        { "file": "sounds/task.complete/all-rejoice-m.mp3", "label": "普天同庆·男" },
-        { "file": "sounds/task.complete/all-rejoice-f.mp3", "label": "普天同庆·女" },
-        { "file": "sounds/task.complete/bountiful-harvest-m.mp3", "label": "五谷丰登·男" },
-        { "file": "sounds/task.complete/bountiful-harvest-f.mp3", "label": "五谷丰登·女" },
-        { "file": "sounds/task.complete/strive-for-top-m.mp3", "label": "勇争上游·男" },
-        { "file": "sounds/task.complete/strive-for-top-f.mp3", "label": "勇争上游·女" },
-        { "file": "sounds/task.complete/allied-banquet-m.mp3", "label": "联军盛宴·男" },
-        { "file": "sounds/task.complete/allied-banquet-f.mp3", "label": "联军盛宴·女" },
-        { "file": "sounds/task.complete/auspicious-snow-m.mp3", "label": "瑞雪丰年·男" },
-        { "file": "sounds/task.complete/auspicious-snow-f.mp3", "label": "瑞雪丰年·女" },
-        { "file": "sounds/task.complete/in-the-same-boat-m.mp3", "label": "同舟共济·男" },
-        { "file": "sounds/task.complete/in-the-same-boat-f.mp3", "label": "同舟共济·女" }
+        {
+          "file": "sounds/task.complete/all-rejoice-m.mp3",
+          "label": "普天同庆·男",
+          "sha256": "079eff7de69256427e3c36a720e4581ea002bf603ef115446825c3f52325fbb1"
+        },
+        {
+          "file": "sounds/task.complete/all-rejoice-f.mp3",
+          "label": "普天同庆·女",
+          "sha256": "a59ab8bfa1734a0ba77b19abed11430c6c5c09e9363ee3cebeed51e0631ef4f4"
+        },
+        {
+          "file": "sounds/task.complete/bountiful-harvest-m.mp3",
+          "label": "五谷丰登·男",
+          "sha256": "a2493ab8fa8096d19d0737172ae6231321e5a8a67bd59c86559f4ee442a50219"
+        },
+        {
+          "file": "sounds/task.complete/bountiful-harvest-f.mp3",
+          "label": "五谷丰登·女",
+          "sha256": "30aac4c7e9f18af74ae4615f50d92bad8ae255458adbcf3f7fd9487070e1e3e8"
+        },
+        {
+          "file": "sounds/task.complete/strive-for-top-m.mp3",
+          "label": "勇争上游·男",
+          "sha256": "b4ac16f199476a35f58d542f74150ddc6433983790d77cd0b3371a8387946590"
+        },
+        {
+          "file": "sounds/task.complete/strive-for-top-f.mp3",
+          "label": "勇争上游·女",
+          "sha256": "bbc76c34f86ba13fc8a487e2697aaf6ddafe376c5038f1f6ea699a88c91f34ab"
+        },
+        {
+          "file": "sounds/task.complete/allied-banquet-m.mp3",
+          "label": "联军盛宴·男",
+          "sha256": "908be211de741a98269044e7db31c702f5e348d0fdd9d198e833d88bc24b782c"
+        },
+        {
+          "file": "sounds/task.complete/allied-banquet-f.mp3",
+          "label": "联军盛宴·女",
+          "sha256": "6d5cd12b3094ecc62e1c61f0405dabd58ac5835d6ef6d029db1960e6a83fa388"
+        },
+        {
+          "file": "sounds/task.complete/auspicious-snow-m.mp3",
+          "label": "瑞雪丰年·男",
+          "sha256": "b3ce027c749b94db166575479f410041593d8ca7a41d7687c0e9aacaca575bc9"
+        },
+        {
+          "file": "sounds/task.complete/auspicious-snow-f.mp3",
+          "label": "瑞雪丰年·女",
+          "sha256": "ecf6066d5a7e9235287a7e3b2d71c517d8557236f8d189e1d251e081480478a7"
+        },
+        {
+          "file": "sounds/task.complete/in-the-same-boat-m.mp3",
+          "label": "同舟共济·男",
+          "sha256": "f0f45e7838ff6f49994e05feb615a64db55181ca5f4a38526d432fc9f988be9a"
+        },
+        {
+          "file": "sounds/task.complete/in-the-same-boat-f.mp3",
+          "label": "同舟共济·女",
+          "sha256": "0785eb083ee0aad3e4fed08246dff3e07e8d240c4085e382ef6ed94bf1ab9469"
+        }
       ]
     },
     "task.error": {
       "label": "任务失败",
       "sounds": [
-        { "file": "sounds/task.error/poison-m.mp3", "label": "毒·男" },
-        { "file": "sounds/task.error/poison-f.mp3", "label": "毒·女" },
-        { "file": "sounds/task.error/supply-lines-cut-m.mp3", "label": "兵粮寸断·男" },
-        { "file": "sounds/task.error/supply-lines-cut-f.mp3", "label": "兵粮寸断·女" },
-        { "file": "sounds/task.error/pull-the-rug-m.mp3", "label": "釜底抽薪·男" },
-        { "file": "sounds/task.error/pull-the-rug-f.mp3", "label": "釜底抽薪·女" },
-        { "file": "sounds/task.error/burn-bridges-m.mp3", "label": "过河拆桥·男" },
-        { "file": "sounds/task.error/burn-bridges-f.mp3", "label": "过河拆桥·女" },
-        { "file": "sounds/task.error/sow-discord-m.mp3", "label": "文和乱武·男" },
-        { "file": "sounds/task.error/sow-discord-f.mp3", "label": "文和乱武·女" },
-        { "file": "sounds/task.error/rob-during-fire-m.mp3", "label": "趁火打劫·男" },
-        { "file": "sounds/task.error/rob-during-fire-f.mp3", "label": "趁火打劫·女" }
+        {
+          "file": "sounds/task.error/poison-m.mp3",
+          "label": "毒·男",
+          "sha256": "3894deb273809b77f695783736d090b91fd152b8f198005e5a339399ac5d0fd0"
+        },
+        {
+          "file": "sounds/task.error/poison-f.mp3",
+          "label": "毒·女",
+          "sha256": "882eccb5ceeb39e1c9978868da217ed54a4704e4661829e991a76e98725a8df4"
+        },
+        {
+          "file": "sounds/task.error/supply-lines-cut-m.mp3",
+          "label": "兵粮寸断·男",
+          "sha256": "308f0c3b3ca38b0e9349cd90ac7b671b1dbf8ab2a401b967fcb3dbdb7773073b"
+        },
+        {
+          "file": "sounds/task.error/supply-lines-cut-f.mp3",
+          "label": "兵粮寸断·女",
+          "sha256": "83a5a3d6b494803b3c08498d622eae714bdd4e9beb71f1ec86f4abf61dafc7d0"
+        },
+        {
+          "file": "sounds/task.error/pull-the-rug-m.mp3",
+          "label": "釜底抽薪·男",
+          "sha256": "a84b0bd69ccb37582c565564702b138d90ce44054d56ea49bd28da1b07040058"
+        },
+        {
+          "file": "sounds/task.error/pull-the-rug-f.mp3",
+          "label": "釜底抽薪·女",
+          "sha256": "28d12a314b948fcc4423a54ecce466b9e0823cc226582cc58d9dcada8efe60ac"
+        },
+        {
+          "file": "sounds/task.error/burn-bridges-m.mp3",
+          "label": "过河拆桥·男",
+          "sha256": "9606246f3a1f134c2f5cf7edc611d03e52821532fa7c9474f1db2d37004d9614"
+        },
+        {
+          "file": "sounds/task.error/burn-bridges-f.mp3",
+          "label": "过河拆桥·女",
+          "sha256": "8c2b8cfefba46deb1a7869733d585e81ae1f19b9348ea36ab065c00f3fcb996a"
+        },
+        {
+          "file": "sounds/task.error/sow-discord-m.mp3",
+          "label": "文和乱武·男",
+          "sha256": "a7c2fc93e7396fe6524be1d13076d21b5973c657b4388ea7441c09ba0f387825"
+        },
+        {
+          "file": "sounds/task.error/sow-discord-f.mp3",
+          "label": "文和乱武·女",
+          "sha256": "e4c331c58bbda543d270e54f2c67ce439d374eca49dc67cfef197c9422faeece"
+        },
+        {
+          "file": "sounds/task.error/rob-during-fire-m.mp3",
+          "label": "趁火打劫·男",
+          "sha256": "57a21887911e94b570eca5e3d4e2a83ad1897253de03d5cd4dd7af71e0803b73"
+        },
+        {
+          "file": "sounds/task.error/rob-during-fire-f.mp3",
+          "label": "趁火打劫·女",
+          "sha256": "f57b640463e2011513ece66fa426862bd782567857cd3d6a51b5c96c0ca3ec15"
+        }
       ]
     },
     "input.required": {
       "label": "等待决策",
       "sounds": [
-        { "file": "sounds/input.required/duel-m.mp3", "label": "决斗·男" },
-        { "file": "sounds/input.required/duel-f.mp3", "label": "决斗·女" },
-        { "file": "sounds/input.required/know-thyself-m.mp3", "label": "知己知彼·男" },
-        { "file": "sounds/input.required/know-thyself-f.mp3", "label": "知己知彼·女" },
-        { "file": "sounds/input.required/lure-the-tiger-m.mp3", "label": "调虎离山·男" },
-        { "file": "sounds/input.required/lure-the-tiger-f.mp3", "label": "调虎离山·女" },
-        { "file": "sounds/input.required/impeccable-m.mp3", "label": "无懈可击·男" },
-        { "file": "sounds/input.required/impeccable-f.mp3", "label": "无懈可击·女" },
-        { "file": "sounds/input.required/unorthodox-tactics-m.mp3", "label": "奇正相生·男" },
-        { "file": "sounds/input.required/unorthodox-tactics-f.mp3", "label": "奇正相生·女" },
-        { "file": "sounds/input.required/borrowed-sword-m.mp3", "label": "借刀杀人·男" },
-        { "file": "sounds/input.required/borrowed-sword-f.mp3", "label": "借刀杀人·女" }
+        {
+          "file": "sounds/input.required/duel-m.mp3",
+          "label": "决斗·男",
+          "sha256": "100edf75c2e13577f59b91c01ef00ab777b56eb745b11d076b22ffd7abf3767c"
+        },
+        {
+          "file": "sounds/input.required/duel-f.mp3",
+          "label": "决斗·女",
+          "sha256": "5391467226658355d9d401879710a4a0d81cec055abae9c6e5d33eda7c648b56"
+        },
+        {
+          "file": "sounds/input.required/know-thyself-m.mp3",
+          "label": "知己知彼·男",
+          "sha256": "6351851fda32fc22f8b4897368d307e85443b1c20a2c0bcdbf8b87d85e54e288"
+        },
+        {
+          "file": "sounds/input.required/know-thyself-f.mp3",
+          "label": "知己知彼·女",
+          "sha256": "a3bb256edcc1bdd71472be7ea46a4cc4fe11d00622871fc75f3eae77050bafe1"
+        },
+        {
+          "file": "sounds/input.required/lure-the-tiger-m.mp3",
+          "label": "调虎离山·男",
+          "sha256": "873c13dfc792cdcda2216a95b939755ff5c9782cfe5a9c15dc91805e63846741"
+        },
+        {
+          "file": "sounds/input.required/lure-the-tiger-f.mp3",
+          "label": "调虎离山·女",
+          "sha256": "da906f66752bb4671d21cde7859dd5833ea88ecb1faeb173d32dd782ebd22b91"
+        },
+        {
+          "file": "sounds/input.required/impeccable-m.mp3",
+          "label": "无懈可击·男",
+          "sha256": "db6ee5ca1f62aebfceb01288a06825205b198af49daae3f3ca5e26ea9fe377ed"
+        },
+        {
+          "file": "sounds/input.required/impeccable-f.mp3",
+          "label": "无懈可击·女",
+          "sha256": "f72cf8b891b0048ec3d3c9cd51e73fb4bd4b9d82bf8e174ddfd8a53c4273f8a7"
+        },
+        {
+          "file": "sounds/input.required/unorthodox-tactics-m.mp3",
+          "label": "奇正相生·男",
+          "sha256": "2fd61996562869cb08e58d04c83d42498ce389369b7920f3499181465e079f0d"
+        },
+        {
+          "file": "sounds/input.required/unorthodox-tactics-f.mp3",
+          "label": "奇正相生·女",
+          "sha256": "49937e03c595d87b0d82bd98031c3b39004a9cdbed55ae3f2cfef501b0b4f5bd"
+        },
+        {
+          "file": "sounds/input.required/borrowed-sword-m.mp3",
+          "label": "借刀杀人·男",
+          "sha256": "adf5513d64ad2ca34e012229225e1dfd4d5d60bfebb6a44f1e78c481816f9df9"
+        },
+        {
+          "file": "sounds/input.required/borrowed-sword-f.mp3",
+          "label": "借刀杀人·女",
+          "sha256": "fa6530690ca090ef2d129df252fcf0604bd8a10024fc59c39eaf1793ebf4613e"
+        }
       ]
     },
     "resource.limit": {
       "label": "资源耗尽",
       "sounds": [
-        { "file": "sounds/resource.limit/scrape-bone-cure-m.mp3", "label": "刮骨疗毒·男" },
-        { "file": "sounds/resource.limit/scrape-bone-cure-f.mp3", "label": "刮骨疗毒·女" },
-        { "file": "sounds/resource.limit/lightning-m.mp3", "label": "闪电·男" },
-        { "file": "sounds/resource.limit/lightning-f.mp3", "label": "闪电·女" },
-        { "file": "sounds/resource.limit/volley-of-arrows-m.mp3", "label": "万箭齐发·男" },
-        { "file": "sounds/resource.limit/volley-of-arrows-f.mp3", "label": "万箭齐发·女" },
-        { "file": "sounds/resource.limit/barbarian-invasion-m.mp3", "label": "南蛮入侵·男" },
-        { "file": "sounds/resource.limit/barbarian-invasion-f.mp3", "label": "南蛮入侵·女" },
-        { "file": "sounds/resource.limit/rain-of-arrows-m.mp3", "label": "箭如雨发·男" },
-        { "file": "sounds/resource.limit/rain-of-arrows-f.mp3", "label": "箭如雨发·女" }
+        {
+          "file": "sounds/resource.limit/scrape-bone-cure-m.mp3",
+          "label": "刮骨疗毒·男",
+          "sha256": "f4c2ee2856a0f7c4d1acd4fc180db28f839ebb71edb8441b9c74bb58315a2ee2"
+        },
+        {
+          "file": "sounds/resource.limit/scrape-bone-cure-f.mp3",
+          "label": "刮骨疗毒·女",
+          "sha256": "bd34daf45146fc7e9d95e3240a36b6e6dc24be8a0b0514189587010689be479b"
+        },
+        {
+          "file": "sounds/resource.limit/lightning-m.mp3",
+          "label": "闪电·男",
+          "sha256": "2d45c0024bc1ccf0b2f81f142fb39da53a30b8044168c8beb191885dea7fbcf3"
+        },
+        {
+          "file": "sounds/resource.limit/lightning-f.mp3",
+          "label": "闪电·女",
+          "sha256": "acbd062a6a3a5cd79c9e0215453a5823b94cdc92074160c792edbe02eb1430e9"
+        },
+        {
+          "file": "sounds/resource.limit/volley-of-arrows-m.mp3",
+          "label": "万箭齐发·男",
+          "sha256": "14973798c342a532c36c2774263643f2715affa3da8cdb9f9de1e033321a21e8"
+        },
+        {
+          "file": "sounds/resource.limit/volley-of-arrows-f.mp3",
+          "label": "万箭齐发·女",
+          "sha256": "6ca92a990de7e0cfc0115875cfd04f413ef569c9b75be4cba137c7aa9dbb09eb"
+        },
+        {
+          "file": "sounds/resource.limit/barbarian-invasion-m.mp3",
+          "label": "南蛮入侵·男",
+          "sha256": "e85c5c58264a8843098045353a267a9722438791e7870338bffa1a8f10cb0a45"
+        },
+        {
+          "file": "sounds/resource.limit/barbarian-invasion-f.mp3",
+          "label": "南蛮入侵·女",
+          "sha256": "3c1c07b5d47e62959ecddb0e0a59a4ac8961840d26f4eebf2e7b2b61605e3707"
+        },
+        {
+          "file": "sounds/resource.limit/rain-of-arrows-m.mp3",
+          "label": "箭如雨发·男",
+          "sha256": "a4a4229813743f1ec4d3bd89a8ae71cfcaf05ff35538ad568bdb6a23d794caac"
+        },
+        {
+          "file": "sounds/resource.limit/rain-of-arrows-f.mp3",
+          "label": "箭如雨发·女",
+          "sha256": "aaf2c98f3a55ceda060fca0b561bf4f6bb527e4f4a98da78bb26c9da63b2bea4"
+        }
       ]
     },
     "session.end": {
       "label": "结束",
       "sounds": [
-        { "file": "sounds/session.end/wine-m.mp3", "label": "酒·男" },
-        { "file": "sounds/session.end/wine-f.mp3", "label": "酒·女" },
-        { "file": "sounds/session.end/laurel-wine-m.mp3", "label": "月桂酒·男" },
-        { "file": "sounds/session.end/laurel-wine-f.mp3", "label": "月桂酒·女" },
-        { "file": "sounds/session.end/heart-to-heart-m.mp3", "label": "推心置腹·男" },
-        { "file": "sounds/session.end/heart-to-heart-f.mp3", "label": "推心置腹·女" },
-        { "file": "sounds/session.end/balance-salt-plum-m.mp3", "label": "调剂盐梅·男" },
-        { "file": "sounds/session.end/balance-salt-plum-f.mp3", "label": "调剂盐梅·女" },
-        { "file": "sounds/session.end/ally-far-attack-near-m.mp3", "label": "远交近攻·男" },
-        { "file": "sounds/session.end/ally-far-attack-near-f.mp3", "label": "远交近攻·女" }
+        {
+          "file": "sounds/session.end/wine-m.mp3",
+          "label": "酒·男",
+          "sha256": "0f8ecfc5834724c3e2421863d480e18fed96c2896a95f42965551142a15e2407"
+        },
+        {
+          "file": "sounds/session.end/wine-f.mp3",
+          "label": "酒·女",
+          "sha256": "bf21f0fade7883015a167e1d197db08a4d4e79c28b5a1f8f226080d1ef8f7011"
+        },
+        {
+          "file": "sounds/session.end/laurel-wine-m.mp3",
+          "label": "月桂酒·男",
+          "sha256": "f6c19f638967507b1264fe087a054560b4f24b03a5488460a0a038dd60e4ff21"
+        },
+        {
+          "file": "sounds/session.end/laurel-wine-f.mp3",
+          "label": "月桂酒·女",
+          "sha256": "4895f9031216b16a8ffd908d91aa8bbca9f136f34664245459c34db931efc925"
+        },
+        {
+          "file": "sounds/session.end/heart-to-heart-m.mp3",
+          "label": "推心置腹·男",
+          "sha256": "5cdc0b69484a2e6f3952d73a47d00d7b6569d65a95db43b13a06934bcecb0f27"
+        },
+        {
+          "file": "sounds/session.end/heart-to-heart-f.mp3",
+          "label": "推心置腹·女",
+          "sha256": "784feaae41a9728b0cd53f2ac9bd4f36cef025ea9a9241a72b8281ff3e1f524a"
+        },
+        {
+          "file": "sounds/session.end/balance-salt-plum-m.mp3",
+          "label": "调剂盐梅·男",
+          "sha256": "96484167641f55cd79551110107035931b8f21b3fb5ef1394ca19b6989a7e118"
+        },
+        {
+          "file": "sounds/session.end/balance-salt-plum-f.mp3",
+          "label": "调剂盐梅·女",
+          "sha256": "bb7bfb36a4579382b8da953c9a3aa3cb9992cd8e86c5afb410ae50c7da0a7fc4"
+        },
+        {
+          "file": "sounds/session.end/ally-far-attack-near-m.mp3",
+          "label": "远交近攻·男",
+          "sha256": "f9cefcaef8d3ca0bf9c908f59b780d644003d5ceb464c365cdce0a91ec07db20"
+        },
+        {
+          "file": "sounds/session.end/ally-far-attack-near-f.mp3",
+          "label": "远交近攻·女",
+          "sha256": "1dd08904eaa054f79ee8ea57869ec66520005fe7aa49a9bf7a03ce6b896d43cc"
+        }
       ]
     },
     "task.progress": {
       "label": "进行中",
       "sounds": [
-        { "file": "sounds/task.progress/flood-seven-armies-m.mp3", "label": "水淹七军·男" },
-        { "file": "sounds/task.progress/flood-seven-armies-f.mp3", "label": "水淹七军·女" },
-        { "file": "sounds/task.progress/split-forces-m.mp3", "label": "分兵搦战·男" },
-        { "file": "sounds/task.progress/split-forces-f.mp3", "label": "分兵搦战·女" },
-        { "file": "sounds/task.progress/iron-chain-m.mp3", "label": "铁索连环·男" },
-        { "file": "sounds/task.progress/iron-chain-f.mp3", "label": "铁索连环·女" },
-        { "file": "sounds/task.progress/logistics-m.mp3", "label": "调度粮草·男" },
-        { "file": "sounds/task.progress/logistics-f.mp3", "label": "调度粮草·女" },
-        { "file": "sounds/task.progress/stars-shift-m.mp3", "label": "斗转星移·男" },
-        { "file": "sounds/task.progress/stars-shift-f.mp3", "label": "斗转星移·女" }
+        {
+          "file": "sounds/task.progress/flood-seven-armies-m.mp3",
+          "label": "水淹七军·男",
+          "sha256": "b0bab59683f195516031b64f60a9fd9df27bd5a5e2d80a47f3d1b4e766ccf810"
+        },
+        {
+          "file": "sounds/task.progress/flood-seven-armies-f.mp3",
+          "label": "水淹七军·女",
+          "sha256": "dbf6285376588f336246ac8d917bdb10b5a49c1b7dd6612147bfb44f5b2f8a09"
+        },
+        {
+          "file": "sounds/task.progress/split-forces-m.mp3",
+          "label": "分兵搦战·男",
+          "sha256": "e94933962b5e1e9cd3ccb585b2cb1fce679b5d3e84f2082415043452eac8963f"
+        },
+        {
+          "file": "sounds/task.progress/split-forces-f.mp3",
+          "label": "分兵搦战·女",
+          "sha256": "bfc00f7bf0aeedf6345f7db36f28fbf56a697038bb307a7a1b9291a754ffbc25"
+        },
+        {
+          "file": "sounds/task.progress/iron-chain-m.mp3",
+          "label": "铁索连环·男",
+          "sha256": "736a4316179eac4765d871bcb33a99065bc5f26898c65333381a77e6ee6d593b"
+        },
+        {
+          "file": "sounds/task.progress/iron-chain-f.mp3",
+          "label": "铁索连环·女",
+          "sha256": "0fe63e47a4fb9e8c83bfc7297b3b7438dbd3b4d9d90dc2ef5dc7dec150f47ae3"
+        },
+        {
+          "file": "sounds/task.progress/logistics-m.mp3",
+          "label": "调度粮草·男",
+          "sha256": "8a082c35ecae0a896f87a0090034dd8b3a196509ab53f0f83d1bfb86071c6239"
+        },
+        {
+          "file": "sounds/task.progress/logistics-f.mp3",
+          "label": "调度粮草·女",
+          "sha256": "8599816011fc01a54ee72e7af9fe31d84864e2c4f42f5d25756d02310534549e"
+        },
+        {
+          "file": "sounds/task.progress/stars-shift-m.mp3",
+          "label": "斗转星移·男",
+          "sha256": "79666c8a4f6fc38dd915fedb833e3c53f42e1b5aaa4606a38f5fed1293c835d0"
+        },
+        {
+          "file": "sounds/task.progress/stars-shift-f.mp3",
+          "label": "斗转星移·女",
+          "sha256": "ca2ecb54ee61e125c4bab8d180adc1d653d9f9161025b93f548cab07b0343478"
+        }
       ]
     },
     "user.spam": {
       "label": "操之过急",
       "sounds": [
-        { "file": "sounds/user.spam/wait-at-ease-m.mp3", "label": "以逸待劳·男" },
-        { "file": "sounds/user.spam/wait-at-ease-f.mp3", "label": "以逸待劳·女" },
-        { "file": "sounds/user.spam/lost-in-pleasure-m.mp3", "label": "乐不思蜀·男" },
-        { "file": "sounds/user.spam/lost-in-pleasure-f.mp3", "label": "乐不思蜀·女" },
-        { "file": "sounds/user.spam/dodge-m.mp3", "label": "闪·男" },
-        { "file": "sounds/user.spam/dodge-f.mp3", "label": "闪·女" },
-        { "file": "sounds/user.spam/snatch-m.mp3", "label": "顺手牵羊·男" },
-        { "file": "sounds/user.spam/snatch-f.mp3", "label": "顺手牵羊·女" },
-        { "file": "sounds/user.spam/something-from-nothing-m.mp3", "label": "无中生有·男" },
-        { "file": "sounds/user.spam/something-from-nothing-f.mp3", "label": "无中生有·女" }
+        {
+          "file": "sounds/user.spam/wait-at-ease-m.mp3",
+          "label": "以逸待劳·男",
+          "sha256": "3cbcb5a30d9ce4ec407464613e137706ecc9f1580ad5935c5d6d6f1e70056e43"
+        },
+        {
+          "file": "sounds/user.spam/wait-at-ease-f.mp3",
+          "label": "以逸待劳·女",
+          "sha256": "d33c481b6464f73ba0763c5892df68177600725093d45b70c6c66cd5311a89eb"
+        },
+        {
+          "file": "sounds/user.spam/lost-in-pleasure-m.mp3",
+          "label": "乐不思蜀·男",
+          "sha256": "3f6f2715b0837e289990a998a2b0cc9ec2428e0458d2229c495c62cd7041f914"
+        },
+        {
+          "file": "sounds/user.spam/lost-in-pleasure-f.mp3",
+          "label": "乐不思蜀·女",
+          "sha256": "9d3b220d1868bb63c80f26cae62cc6c7c33aedf28019fd391752ed49414d3b28"
+        },
+        {
+          "file": "sounds/user.spam/dodge-m.mp3",
+          "label": "闪·男",
+          "sha256": "c4b7c8fd5fe3074e48ba3ccc89727de4af4f03e49ae8e5a811036f0dbabd2ea0"
+        },
+        {
+          "file": "sounds/user.spam/dodge-f.mp3",
+          "label": "闪·女",
+          "sha256": "39f19ea8ff91e499ff9d07caf8754a22b2e1bf95e683cdc9a2a5a9b2778bbca8"
+        },
+        {
+          "file": "sounds/user.spam/snatch-m.mp3",
+          "label": "顺手牵羊·男",
+          "sha256": "b33d048af81c9f2912370f83066ab2e00a47b5a06dce4e05e9e54a5498dd4dfb"
+        },
+        {
+          "file": "sounds/user.spam/snatch-f.mp3",
+          "label": "顺手牵羊·女",
+          "sha256": "0b3c2a9cfccce3527dba8426ecc30f60f60e98f1dfcb3633d371f9d680f1a532"
+        },
+        {
+          "file": "sounds/user.spam/something-from-nothing-m.mp3",
+          "label": "无中生有·男",
+          "sha256": "1af817daab915de437da37fbad8f36ee1f59142b06712d497f509b010325a846"
+        },
+        {
+          "file": "sounds/user.spam/something-from-nothing-f.mp3",
+          "label": "无中生有·女",
+          "sha256": "e1410b09a7bbd726bd6e58bbf6ba2cec86f112e7577abe4718de250c6863f6d0"
+        }
       ]
     }
   }
