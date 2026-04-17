@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Raw source audio — not tracked, users supply their own
+resource/
